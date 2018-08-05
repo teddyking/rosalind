@@ -1,0 +1,13 @@
+[package]
+name = "counting_dna_nucleotides"
+version = "0.1.0"
+authors = ["teddyking <ed@teddyking.co.uk>"]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "my_benchmark"
+harness = false
