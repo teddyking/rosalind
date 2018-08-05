@@ -1,10 +1,20 @@
 pub fn acgt_counts(input: &str) -> (usize, usize, usize, usize) {
-    let a = input.matches("A");
-    let c = input.matches("C");
-    let g = input.matches("G");
-    let t = input.matches("T");
+    let mut a = 0;
+    let mut c = 0;
+    let mut g = 0;
+    let mut t = 0;
 
-    (a.count(), c.count(), g.count(), t.count())
+    for ch in input.chars() {
+        match ch {
+            'A' => a += 1,
+            'C' => c += 1,
+            'G' => g += 1,
+            'T' => t += 1,
+            _ => {}
+        }
+    }
+
+    (a, c, g, t)
 }
 
 #[cfg(test)]
