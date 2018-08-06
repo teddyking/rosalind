@@ -1,5 +1,8 @@
 pub fn dna_to_rna(input: &str) -> String {
-    input.replace("T", "U")
+    input
+        .chars()
+        .map(|c| if c == 'T' { 'U' } else { c })
+        .collect()
 }
 
 #[cfg(test)]
