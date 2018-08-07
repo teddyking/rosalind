@@ -1,9 +1,9 @@
 #[macro_use]
 extern crate criterion;
-extern crate counting_dna_nucleotides;
+extern crate dna;
 
-use counting_dna_nucleotides::acgt_counts;
 use criterion::Criterion;
+use dna::acgt_counts;
 
 fn bench_acgt_counts(c: &mut Criterion) {
     let input = "ACGT".repeat(250);

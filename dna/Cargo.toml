@@ -1,5 +1,5 @@
 [package]
-name = "transcribing_dna_to_rna"
+name = "dna"
 version = "0.1.0"
 authors = ["teddyking <ed@teddyking.co.uk>"]
 

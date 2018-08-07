@@ -1,9 +1,9 @@
-extern crate counting_dna_nucleotides;
+extern crate dna;
 
 use std::env;
 use std::process;
 
-use counting_dna_nucleotides::acgt_counts;
+use dna::acgt_counts;
 
 fn main() {
     let args: Vec<String> = env::args().collect();

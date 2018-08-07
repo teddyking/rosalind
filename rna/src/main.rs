@@ -1,9 +1,9 @@
-extern crate transcribing_dna_to_rna;
+extern crate rna;
 
 use std::env;
 use std::process;
 
-use transcribing_dna_to_rna::dna_to_rna;
+use rna::dna_to_rna;
 
 fn main() {
     let args: Vec<String> = env::args().collect();

@@ -95,13 +95,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "counting_dna_nucleotides"
-version = "0.1.0"
-dependencies = [
- "criterion 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
 name = "criterion"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -382,6 +375,13 @@ version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "ucd-util 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rna"
+version = "0.1.0"
+dependencies = [
+ "criterion 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]

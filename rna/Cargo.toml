@@ -1,5 +1,5 @@
 [package]
-name = "counting_dna_nucleotides"
+name = "rna"
 version = "0.1.0"
 authors = ["teddyking <ed@teddyking.co.uk>"]
 

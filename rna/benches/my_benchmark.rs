@@ -1,9 +1,9 @@
 #[macro_use]
 extern crate criterion;
-extern crate transcribing_dna_to_rna;
+extern crate rna;
 
-use transcribing_dna_to_rna::dna_to_rna;
 use criterion::Criterion;
+use rna::dna_to_rna;
 
 fn bench_dna_to_rna(c: &mut Criterion) {
     let input = "ACGT".repeat(250);
