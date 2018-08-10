@@ -1,9 +1,14 @@
 pub fn rabbits(n: u64, k: u64) -> u64 {
-    match n {
-        1 => 1,
-        2 => 1,
-        n => (rabbits(n - 2, k) * k) + rabbits(n - 1, k),
+    let mut immature_pairs = 1;
+    let mut mature_pairs = 0;
+
+    for _ in 1..n {
+        let offspring_pairs = mature_pairs * k;
+        mature_pairs += immature_pairs;
+        immature_pairs = offspring_pairs;
     }
+
+    immature_pairs + mature_pairs
 }
 
 #[cfg(test)]
